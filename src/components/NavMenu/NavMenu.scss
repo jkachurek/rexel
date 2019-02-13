@@ -1,0 +1,18 @@
+@import '../../base.scss';
+
+.nav-menu {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .nav-link {
+    flex: 1 1 26%;
+    &.jumbo {
+      flex-basis: 100%
+    }
+    @include breakpoint($mobile) {
+      flex-basis: 100%;
+    }
+  }
+
+}

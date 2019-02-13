@@ -1,0 +1,21 @@
+.search-box-wrapper {
+  margin-right: 10px;
+}
+
+.search-box {
+  margin-top: 10px;
+
+  background-image: url('../Icon/ic/black/ic_search.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  height: 20px;
+  padding: 10px 5px;
+  &::placeholder {
+    color: rgba(122, 122, 122, 0.7);
+  }
+}

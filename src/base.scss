@@ -1,0 +1,30 @@
+$mobile: "(max-width: 600px)";
+$nonmobile: "(min-width: 601px)";
+$tablet: "(max-width: 1250px)";
+$desktop: "(min-width: 1251px)";
+
+@mixin breakpoint($point) {
+  @if $point == $mobile {
+    @media #{$mobile} { @content; }
+  }
+  @if $point == $tablet {
+    @media #{$desktop} { @content; }
+  }
+  @if $point == $desktop {
+    @media #{$desktop} { @content; }
+  }
+  @if $point == $nonmobile {
+    @media #{$nonmobile} { @content; }
+  }
+}
+
+.mobile-only {
+  @include breakpoint($nonmobile) {
+    display: none !important;
+  }
+}
+
+@mixin scaleImg($initHeight, $initWidth, $scaleDecimal) {
+  height: $initHeight * $scaleDecimal + px;
+  width: $initWidth * $scaleDecimal + px;
+}

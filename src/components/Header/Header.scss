@@ -1,0 +1,28 @@
+@import '../../base.scss';
+
+.app-header {
+  background-color: #3a8d51;
+
+  position: fixed;
+  top: 0;
+  height: 115px;
+  width: 100%;
+  .header-logo {
+    @include scaleImg(23, 120, 1.3);
+  }
+  .header-contents {
+    padding: 15px 30px;
+    @include breakpoint($mobile) {
+      padding: 15px;
+    }
+  }
+  .header-flex-line {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
+}

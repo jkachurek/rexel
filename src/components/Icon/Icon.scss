@@ -1,0 +1,75 @@
+.icon {
+  height: 30px;
+  width: 30px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  display: flex;
+  &.notification {
+    
+    &::before {
+      content: '\25CF';
+      color: #e9c71b;
+      margin-left: 18px;
+      margin-top: -11px;
+    }
+  }
+}
+/*
+  Ideally, I would do this with SVGs so that they
+  could scale and change color dynamically, but I
+  was given PNGs, so here we are.
+*/
+.ic-add-check {
+  background-image: url('./ic/black/ic_playlist_add_check.png');
+}
+.ic-arrow-forward {
+  background-image: url('./ic/black/ic_arrow_forward.png');
+}
+.ic-categories {
+  background-image: url('./ic/black/ic_categories.png');
+}
+.ic-chat {
+  background-image: url('./ic/black/ic_chat.png');
+}
+.ic-chat-active {
+  background-image: url('./ic//green//ic_chat\ -\ active.png');
+}
+.ic-check-circle {
+  background-image: url('./ic/black/ic_check_circle.png');
+}
+.ic-comment {
+  background-image: url('./ic/black/ic_comment.png');
+}
+.ic-line-style {
+  background-image: url('./ic/green/ic_line_style.png')
+}
+.ic-list {
+  background-image: url('./ic/black/ic_list.png');
+}
+.ic-menu {
+  background-image: url('./ic/white/ic_menu.png')
+}
+.ic-person-black {
+  background-image: url('./ic/black/ic_person_inverted.png')
+}
+.ic-person-white {
+  background-image: url('./ic/white/ic_person.png')
+}
+.ic-place {
+  background-image: url('./ic/black/ic_place.png');
+}
+.ic-scanner {
+  background-image: url('./ic/green/ic_scanner.png')
+}
+.ic-search-black {
+  background-image: url('./ic/black/ic_search.png');
+}
+.ic-search-green {
+  background-image: url('./ic/green/ic_search.png')
+}
+.ic-search-white {
+  background-image: url('./ic/white/ic_search.png')
+}
+.ic-shopping-cart {
+  background-image: url('./ic/white/ic_shopping_cart.png')
+}
