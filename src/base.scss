@@ -3,6 +3,9 @@ $nonmobile: "(min-width: 601px)";
 $tablet: "(max-width: 1250px)";
 $desktop: "(min-width: 1251px)";
 
+$basic-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+$hover-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.3);
+
 @mixin breakpoint($point) {
   @if $point == $mobile {
     @media #{$mobile} { @content; }

@@ -1,0 +1,31 @@
+@import '../../base.scss';
+
+.panel {
+  box-shadow: $basic-shadow;
+  background-color: #fff;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+.nonmobile-priority {
+  @include breakpoint ($nonmobile) {
+    order: -1;
+  }
+}
+
+.panel-small {
+  flex: 1 1 15%;
+  @include breakpoint($mobile) {
+    flex-basis: 30%;
+  }
+}
+.panel-medium {
+  flex: 1 1 40%;
+  @include breakpoint($mobile) {
+    flex-basis: 100%;
+  }
+}
+.panel-large {
+  flex: 1 1 100%;
+}

@@ -1,0 +1,18 @@
+@import '../../base.scss';
+
+.badge-text {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.action-circle {
+  background-color: #fff;
+  box-shadow: $basic-shadow;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    background-color: darken(#fff, 2);
+    box-shadow: $hover-shadow;
+    transform: translateY(-2px);
+  }
+}

@@ -1,9 +1,10 @@
 .icon {
-  height: 30px;
-  width: 30px;
-  background-size: 24px;
+  // background-size: 24px;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   &.notification {
     
     &::before {

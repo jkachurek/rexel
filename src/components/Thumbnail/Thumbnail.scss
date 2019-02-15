@@ -1,0 +1,20 @@
+@import '../../base.scss';
+
+.thumbnail {
+  text-align: center;
+  font-weight: bolder;
+  word-wrap: normal;
+  background: #fff;
+  width: 109px;
+  margin: 10px;
+  box-shadow: $basic-shadow;
+
+  &:hover {
+    box-shadow: $hover-shadow;
+  }
+
+  .thumbnail-img {
+    width: 109px;
+    height: 77px;
+  }
+}

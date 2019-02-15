@@ -10,21 +10,23 @@ const Icon = ({
   onClick,
   hasNotification,
   className,
+  size,
 }) => {
   const classNames = [
     'icon',
     `ic-${icon}`,
     className,
     hasNotification && 'notification'
-  ].filter(Boolean)
-    .join(' ');
+  ].filter(Boolean).join(' ');
 
   return (
     <span
       className={classNames}
-      title={title || icon}
       style={{
-        cursor: onClick ? 'pointer' : 'normal'
+        cursor: onClick ? 'pointer' : 'normal',
+        height: `${size}px`,
+        width: `${size}px`,
+        backgroundSize: `${size - 8}px`,
       }}
     />
   );
@@ -36,6 +38,11 @@ Icon.propTypes = {
   onClick: PropTypes.func,
   hasNotification: PropTypes.bool,
   className: PropTypes.string,
+  size: PropTypes.number,
+};
+
+Icon.defaultProps = {
+  size: 30,
 };
 
 export default Icon;

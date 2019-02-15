@@ -1,0 +1,11 @@
+@import '../../base.scss';
+
+.badge-button-drawer {
+  @include breakpoint($nonmobile) {
+    display: none;
+  }
+
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
