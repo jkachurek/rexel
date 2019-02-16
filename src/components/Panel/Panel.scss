@@ -2,10 +2,10 @@
 
 .panel {
   box-shadow: $basic-shadow;
-  background-color: #fff;
-  padding: 5px;
+  background-color: $white;
   margin: 10px;
   text-align: center;
+  font-weight: bold;
 }
 
 .nonmobile-priority {
@@ -28,4 +28,7 @@
 }
 .panel-large {
   flex: 1 1 100%;
+}
+.panel-padded {
+  padding: 18px 12px;
 }

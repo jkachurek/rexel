@@ -12,7 +12,6 @@
   cursor: pointer;
   &:hover {
     background-color: darken(#fff, 2);
-    box-shadow: $hover-shadow;
-    transform: translateY(-2px);
+    @include bounce(300ms, 5px);
   }
 }

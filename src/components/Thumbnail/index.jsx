@@ -19,4 +19,9 @@ const Thumbnail = ({
   </div>
 );
 
+Thumbnail.propTypes = {
+  src: PropTypes.string,
+  label: PropTypes.string,
+};
+
 export default Thumbnail;

@@ -1,0 +1,52 @@
+@import './base.scss';
+
+.app-contents {
+  margin-top: 115px;
+}
+
+.mobile-only {
+  @include breakpoint($nonmobile) {
+    display: none !important;
+  }
+}
+.nonmobile-only {
+  @include breakpoint($mobile) {
+    display: none !important;
+  }
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.link {
+  color: $platt-green;
+  text-decoration: none;
+}
+
+.platt-green-text {
+  color: $platt-green;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-spread-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-spread-around {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-spread-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.thumb-small {
+  width: 100%;
+  height: auto;
+}

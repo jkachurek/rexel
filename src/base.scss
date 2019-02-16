@@ -6,6 +6,9 @@ $desktop: "(min-width: 1251px)";
 $basic-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 $hover-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.3);
 
+$platt-green: #3a8d51;
+$white: #fff;
+
 @mixin breakpoint($point) {
   @if $point == $mobile {
     @media #{$mobile} { @content; }
@@ -21,13 +24,25 @@ $hover-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.3);
   }
 }
 
-.mobile-only {
-  @include breakpoint($nonmobile) {
-    display: none !important;
-  }
-}
-
 @mixin scaleImg($initHeight, $initWidth, $scaleDecimal) {
   height: $initHeight * $scaleDecimal + px;
   width: $initWidth * $scaleDecimal + px;
+}
+
+@mixin marginCenter() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin bounce($duration, $height) {
+  $shadowBlur: $height + 2px;
+  @keyframes bounceAnimation {
+    50% {
+      transform: translateY(- $height);
+      box-shadow: 0px $shadowBlur 5px 1px rgba(0, 0, 0, 0.3);
+    }
+  }
+  animation-name: bounceAnimation;
+  animation-duration: $duration;
+  box-shadow: $hover-shadow;
 }

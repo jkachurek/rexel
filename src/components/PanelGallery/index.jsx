@@ -9,4 +9,8 @@ const PanelGallery = ({ children }) => (
   </div>
 );
 
+PanelGallery.propTypes = {
+  children: PropTypes.node,
+};
+
 export default PanelGallery;

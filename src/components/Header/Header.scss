@@ -1,12 +1,13 @@
 @import '../../base.scss';
 
 .app-header {
-  background-color: #3a8d51;
+  background-color: $platt-green;
 
   position: fixed;
   top: 0;
   height: 115px;
   width: 100%;
+  z-index: 100;
   .header-logo {
     @include scaleImg(23, 120, 1.3);
   }

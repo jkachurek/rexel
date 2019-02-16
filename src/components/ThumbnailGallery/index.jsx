@@ -16,4 +16,13 @@ const ThumbnailGallery = ({ title, thumbnails }) => (
   </div>
 );
 
+ThumbnailGallery.propTypes = {
+  title: PropTypes.string,
+  thumbnails: PropTypes.array,
+};
+
+ThumbnailGallery.defaultProps = {
+  thumbnails: [],
+};
+
 export default ThumbnailGallery;

@@ -1,0 +1,28 @@
+@import '../../base.scss';
+
+.button {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  &:hover {
+    @include bounce(250ms, 3px);
+  }
+}
+.btn-primary {
+  background-color: $platt-green;
+  color: #eaeaea;
+}
+.btn-secondary {
+  background-color: #eaeaea;
+}
+.btn-tertiary {
+  background-color: $white;
+}
+
+.btn-contents {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+@import '../../base.scss';
+
+.link-panel {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  .link-panel-img {
+    @include marginCenter();    
+  }
+  &:hover {
+    @include bounce(300ms, 3px);
+    background-color: darken($white, 2);
+  }
+}
