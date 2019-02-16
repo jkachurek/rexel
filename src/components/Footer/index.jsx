@@ -3,7 +3,6 @@ import React from 'react';
 import './Footer.scss';
 
 import Button from '../Button';
-import Icon from '../Icon';
 
 import commentIcon from '../Icon/ic/black/ic_comment.png';
 

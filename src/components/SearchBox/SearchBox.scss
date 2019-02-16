@@ -1,3 +1,5 @@
+@import '../../base.scss';
+
 .search-box-wrapper {
   margin-right: 10px;
 }
@@ -17,5 +19,17 @@
   padding: 10px 5px;
   &::placeholder {
     color: rgba(122, 122, 122, 0.7);
+  }
+  width: 100%;
+}
+
+.search-result {
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  &.highlighted {
+    background-color: #eaeaea;
+    color: $platt-green;
+    font-weight: bold;
   }
 }
